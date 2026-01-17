@@ -14,3 +14,7 @@ CREATE OR REPLACE API INTEGRATION dataxbootcamprepo
         TYPE:'GITHUB',
         TOKEN:'<PASTE TOKEN HERE>'
         );
+
+        CREATE OR REPLACE GIT REPORSITORY datax_bootcamp_repo
+            API_INTEGRATION = dataxbootcampcode
+            ORIGIN = 'https://github.com/souravghosh251/data-engineering-bootcamp'
